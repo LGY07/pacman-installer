@@ -12,6 +12,8 @@ pacman-installer使用方法：
 
 `#chmod +x ./pacman-installer.sh`
 
+`#cd ./pacman-installer/`
+
 `#./pacman-install.sh`
 
 [从这里下载](https://github.com/LGY07/pacman-installer/releases)
