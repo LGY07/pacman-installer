@@ -14,9 +14,9 @@ pacman-installer使用方法：
 
 `#cd ./pacman-installer/`
 
-`#./pacman-install.sh`
+`#./pacman-installer.sh`
 
-[从这里下载](https://github.com/LGY07/pacman-installer/releases)
+[也可以从这里下载，添加执行权限后运行pacman-installer.sh](https://github.com/LGY07/pacman-installer/releases)
 
 ### 更新可能不及时，下载速度可能慢，可以手动更改一些内容:
 
