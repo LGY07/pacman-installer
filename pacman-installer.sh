@@ -43,16 +43,16 @@ else
 		LINK=$MIRROR_SITE/iso/$FILENAME
 fi
 # We'd better get the filename from the cloud
-if ! [ -z $INSTALL_DIR ] 
+if ! [ -z $INSTALL_DIRECTORY ] 
 then
-	INSTALL_DIR="/.pacman/"
+	INSTALL_DIRECTORY="/.pacman/"
 	if [ $(id -u) -ne 0 ] ; then
-		echo -e "\033[31m::\033[0m Please run this script as root or set \$INSTALL_DIR environment variable to a directory you can write into"
+		echo -e "\033[31m::\033[0m Please run this script as root or set \$INSTALL_DIRECTORY environment variable to a directory you can write into"
 		exit 1
 	fi
 else
-	if ! [ -w $INSTALL_DIR ] && [ -d $INSTALL_DIR ] ; then
-		echo -e "\033[31m::\033[0m Please run this script as root or set \$INSTALL_DIR environment variable to a directory you can write into"
+	if ! [ -w $INSTALL_DIRECTORY ] && [ -d $INSTALL_DIRECTORY ] ; then
+		echo -e "\033[31m::\033[0m Please run this script as root or set \$INSTALL_DIRECTORY environment variable to a directory you can write into"
 		exit 1
 	fi
 fi
