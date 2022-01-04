@@ -8,7 +8,9 @@ pacman-installer使用方法：
 
 `$su -`
 
-`#chmod +x pacman-installer.sh`
+`#git clone https://github.com/LGY07/pacman-installer.git`
+
+`#chmod +x ./pacman-installer.sh`
 
 `#./pacman-install.sh`
 
