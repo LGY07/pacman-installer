@@ -1,20 +1,15 @@
 #!/usr/bin/env bash
 title="Pacman inatall script"
+version=2022.01.01
+dir=/.pacman
+filename="archlinux-bootstrap-"$version"-x86_64.tar.gz"
+download="http://mirror.rackspace.com/archlinux/iso/"$version"/"$filename
 echo -e '\033]2;'$title'\007'
 printf "\033c"
 if [ $(whoami) == "root" ]
 then echo "Pacman inatall script v2"
 else echo -e "\033[31mERROR:\033[0m Please run this script as root，are you root?" & exit
 fi
-
-#You can change here
-version=2022.01.01
-dir=/.pacman
-
-filename="archlinux-bootstrap-"$version"-x86_64.tar.gz"
-
-#You can change here
-download="http://mirror.rackspace.com/archlinux/iso/"$version"/"$filename
 
 echo "rootfs :"$filename
 echo "download form :"$download
