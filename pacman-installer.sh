@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 title="Pacman inatall script"
 echo -e '\033]2;'$title'\007'
 printf "\033c"
@@ -37,3 +37,4 @@ echo -e "\033[32mFinish\033[0m ,the number of lines in the log file:"
 wc -l ./log.txt
 $dir"/usr/bin/pacman-key" --init
 pacman -Syyu && echo -e "\033[32mSuccess\033[0m \033[33m use \033[0m "$dir"\033[33m/usr/bin[Software Name] to run the Software was installed by Pacman.\033[0m"
+
