@@ -14,7 +14,7 @@ pacman-installer使用方法：
 
 [从这里下载](https://github.com/LGY07/pacman-installer/releases)
 
-###更新可能不及时，下载速度可能慢，可以手动更改一些内容
+##更新可能不及时，下载速度可能慢，可以手动更改一些内容
 
 1.version=[[这里可以更改为用****.**.**格式的日期](http://mirror.rackspace.com/archlinux/iso/latest/)]
 
