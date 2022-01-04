@@ -7,10 +7,14 @@ then echo "Pacman inatall script v2"
 else echo -e "\033[31mERROR:\033[0m Please run this script as root，are you root?" & exit
 fi
 
+#You can change here
 version=2022.01.01
 
 filename="archlinux-bootstrap-"$version"-x86_64.tar.gz"
+
+#You can change here
 download="http://mirror.rackspace.com/archlinux/iso/"$version"/"$filename
+
 echo "rootfs :"$filename
 echo "download form :"$download
 echo "Please wait"
@@ -21,6 +25,7 @@ tar -xvf ./pacman/ "./"$filename 2>./log.txt
 echo "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch">./pacman/root.x86_64/etc/pacman.d/archlinuxcn-mirrorlist
 cp -r ./pacman/root.x86_64/etc/pacman.d/ /etc/pacman.d/ 2>>./log.txt
 
+#You can change here
 dir=/.pacman
 
 mv ./pacman/root.x86_64/ $dir 2>>./log.txt
