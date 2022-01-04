@@ -18,6 +18,6 @@ pacman-installer使用方法：
 
 1.version=[[这里可以更改为用****.**.**格式的日期](http://mirror.rackspace.com/archlinux/iso/latest/)]
 
-2.dir=[[这里可以手动指定Pacman的根目录，注意不要在后面加上/]]
+2.dir=[这里可以手动指定Pacman的根目录，注意不要在后面加上/]
 
-3."http://mirror.rackspace.com/archlinux/iso/"可以手动更改到速度较快的镜像站的"/archlinux/iso/"目录
+3."http://mirror.rackspace.com/archlinux/iso/" 可以手动更改到速度较快的镜像站的"/archlinux/iso/"目录
