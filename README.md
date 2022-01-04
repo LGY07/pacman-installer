@@ -10,9 +10,9 @@ pacman-installer使用方法：
 
 `#git clone https://github.com/LGY07/pacman-installer.git`
 
-`#chmod +x ./pacman-installer.sh`
-
 `#cd ./pacman-installer/`
+
+`#chmod +x ./pacman-installer.sh`
 
 `#./pacman-installer.sh`
 
