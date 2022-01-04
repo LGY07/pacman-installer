@@ -25,7 +25,7 @@ dir=/.pacman
 
 mv ./pacman/root.x86_64/ $dir 2>>./log.txt
 rm -r ./pacman/ 2>/dev/null
-wget https://raw.githubusercontent.com/LGY07/pacman-installer/main/pacman.conf 2>>./log.txt || curl -O https://raw.githubusercontent.com/LGY07/pacman-installer/main/pacman.conf 2>>./log.txt
+wget https://raw.githubusercontent.com/LGY07/pacman-installer/main/pacman.conf || curl -O https://raw.githubusercontent.com/LGY07/pacman-installer/main/pacman.conf 2>>./log.txt
 mv ./pacman.conf /etc/pacman.conf 2>>./log.txt
 echo "[archlinuxcn]">>$dir"/etc/pacman.conf"
 echo "SigLevel = Optional TrustAll">>$dir"/etc/pacman.conf"
