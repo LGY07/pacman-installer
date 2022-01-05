@@ -1,4 +1,7 @@
 # Pacman Install Script
+
+# 此版本不再更新，请前往 [lingrottin / pacman-installer](https://github.com/lingrottin/pacman-installer)
+
 在任意Linux发行版安装ArchLinux的pacman软件包管理器
 
 主要针对apt用户，dnf用户可以直接
@@ -25,3 +28,5 @@ pacman-installer使用方法：
 2.dir=[这里可以手动指定Pacman的根目录，注意不要在后面加上/]
 
 3."http://mirror.rackspace.com/archlinux/iso/" 可以手动更改到速度较快的镜像站的"/archlinux/iso/"目录
+
+### pacman安装的软件请使用/usr/bin/[软件名]来运行
