@@ -29,4 +29,4 @@ pacman-installer使用方法：
 
 3."http://mirror.rackspace.com/archlinux/iso/" 可以手动更改到速度较快的镜像站的"/archlinux/iso/"目录
 
-### pacman安装的软件请使用/usr/bin/[软件名]来运行
+### pacman安装的软件请使用/[Pacman的根目录]/usr/bin/[软件名]来运行
