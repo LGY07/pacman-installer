@@ -32,7 +32,7 @@ if ! [ -z $RELEASE_DATE ] ; then
 		FILENAME=$($GETSTDOUT_CMD $MIRROR_SITE/iso/$RELEASE_DATE/md5sums.txt | grep -Go  '\S*tar\S*$' )
 		LINK=$MIRROR_SITE/iso/$RELEASE_DATE/$FILENAME
 	else
-		MIRROR_SITE="https://america.mirror.pkgbuild.com/"#Global rackspace.com mirror seems to be down
+		MIRROR_SITE="https://america.mirror.pkgbuild.com"#Global rackspace.com mirror seems to be down
 		FILENAME=$($GETSTDOUT_CMD $MIRROR_SITE/iso/$RELEASE_DATE/md5sums.txt | grep -Go  '\S*tar\S*$')
 		LINK=$MIRROR_SITE/iso/$RELEASE_DATE/$FILENAME
 	fi
@@ -45,7 +45,7 @@ fi
 # We'd better get the filename from the cloud
 if ! [ -z $INSTALL_DIRECTORY ] 
 then
-	INSTALL_DIRECTORY="/.pacman/"
+	INSTALL_DIRECTORY="/.pacman"
 	if [ $(id -u) -ne 0 ] ; then
 		echo -e "\033[31m::\033[0m Please run this script as root or set \$INSTALL_DIRECTORY environment variable to a directory you can write into"
 		exit 1
